@@ -1,0 +1,22 @@
+{
+  "name": "openbox-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "开箱 OpenBox —— AI 工具远程代装服务站点，含订单落库后端与接单后台",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test": "node --disable-warning=ExperimentalWarning tests/run-all.js",
+    "seed": "node --disable-warning=ExperimentalWarning tests/seed-demo.js",
+    "export": "node --disable-warning=ExperimentalWarning scripts/export-orders.js",
+    "shots": "node --disable-warning=ExperimentalWarning scripts/capture-screenshots.js",
+    "e2e": "node --disable-warning=ExperimentalWarning scripts/e2e-selftest.js",
+    "reset-db": "node --disable-warning=ExperimentalWarning scripts/reset-db.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
